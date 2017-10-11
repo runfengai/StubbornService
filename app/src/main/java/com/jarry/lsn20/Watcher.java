@@ -9,9 +9,6 @@ public class Watcher {
         System.loadLibrary("native-lib");
     }
 
-    /**
-     * @param uId
-     * @param sdk
-     */
-    public native void createWatcher(int uId, int sdk);
+
+    public native void createWatcher(int uId);
 }

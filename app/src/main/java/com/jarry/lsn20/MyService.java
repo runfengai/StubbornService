@@ -2,7 +2,6 @@ package com.jarry.lsn20;
 
 import android.app.Service;
 import android.content.Intent;
-import android.os.Build;
 import android.os.IBinder;
 import android.os.Process;
 import android.util.Log;
@@ -18,7 +17,7 @@ public class MyService extends Service {
         super.onCreate();
         Watcher watcher = new Watcher();
         Log.e(TAG, "Process.myUid()=" + Process.myUid());
-        watcher.createWatcher(Process.myUid(), Build.VERSION.SDK_INT);
+        watcher.createWatcher(Process.myUid());
     }
 
     @Override
